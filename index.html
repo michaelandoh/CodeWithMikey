@@ -17,81 +17,80 @@
 
 <body>
 
-    
+    <header id="mainHeader" class="header header-transparent sticky-top shadow-sm navbar-dark bg-dark">
+        <div class="container d-flex align-items-center justify-content-between py-2">
+            <!-- Logo Section -->
+            <a href="index.html" class="d-flex align-items-center text-white text-decoration-none">
+                <img src="./Assets/Images/Logo/CodeMikey.png" alt="Custom Logo" class="logo me-2" width="150"
+                    height="50">
+            </a>
 
+            <!-- Navigation Menu for Larger Devices -->
+            <nav class="d-none d-lg-block">
+                <ul class="nav">
+                    <li class="nav-item"><a href="#about" class="nav-link text-white">About</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link text-white">Services</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link text-white">Portfolio</a></li>
+                    <li class="nav-item"><a href="#team" class="nav-link text-white">Team</a></li>
+                    <li class="nav-item"><a href="#pricing" class="nav-link text-white">Pricing</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown">Dropdown</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Dropdown 1</a></li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Deep Dropdown</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Deep Dropdown 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Deep Dropdown 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#contact" class="nav-link text-white">Contact</a></li>
+                </ul>
+            </nav>
 
-    <!-- Title -->
-    <section id="title" class="gradient-background " >
-        <header id="mainHeader" class="header header-transparent sticky-top shadow-sm navbar-dark bg-dark">
-            <div class="container d-flex align-items-center justify-content-between py-2">
-                <!-- Logo Section -->
+            <!-- Get Started Button -->
+            <a class="btn btn-warning btn-md rounded-pill px-4 py-2" href="#about" id="getStartedButton">Get
+                Started</a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="btn btn-outline-light d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu">
+                <i class="bi bi-list"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="offcanvas offcanvas-end text-bg-dark" id="mobileMenu">
+            <div class="offcanvas-header">
                 <a href="index.html" class="d-flex align-items-center text-white text-decoration-none">
                     <img src="./Assets/Images/Logo/CodeMikey.png" alt="Custom Logo" class="logo me-2" width="150"
                         height="50">
                 </a>
-    
-                <!-- Navigation Menu for Larger Devices -->
-                <nav class="d-none d-lg-block">
-                    <ul class="nav">
-                        <li class="nav-item"><a href="#about" class="nav-link text-white">About</a></li>
-                        <li class="nav-item"><a href="#services" class="nav-link text-white">Services</a></li>
-                        <li class="nav-item"><a href="#portfolio" class="nav-link text-white">Portfolio</a></li>
-                        <li class="nav-item"><a href="#team" class="nav-link text-white">Team</a></li>
-                        <li class="nav-item"><a href="#pricing" class="nav-link text-white">Pricing</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown">Dropdown</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Dropdown 1</a></li>
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle" href="#">Deep Dropdown</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Deep Dropdown 1</a></li>
-                                        <li><a class="dropdown-item" href="#">Deep Dropdown 2</a></li>
-                                    </ul>
-                                </li>
-                                <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a href="#contact" class="nav-link text-white">Contact</a></li>
-                    </ul>
-                </nav>
-    
-                <!-- Get Started Button -->
-                <a class="btn btn-warning btn-md rounded-pill px-4 py-2" href="#about" id="getStartedButton">Get Started</a>
-    
-                <!-- Mobile Menu Toggle -->
-                <button class="btn btn-outline-light d-lg-none" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#mobileMenu">
-                    <i class="bi bi-list"></i>
-                </button>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
             </div>
-    
-            <!-- Mobile Menu -->
-            <div class="offcanvas offcanvas-end text-bg-dark" id="mobileMenu">
-                <div class="offcanvas-header">
-                    <a href="index.html" class="d-flex align-items-center text-white text-decoration-none">
-                        <img src="./Assets/Images/Logo/CodeMikey.png" alt="Custom Logo" class="logo me-2" width="150"
-                            height="50">
-                    </a>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="nav flex-column">
-                        <li class="nav-item"><a href="#hero" class="nav-link text-white">Home</a></li>
-                        <li class="nav-item"><a href="#about" class="nav-link text-white">About</a></li>
-                        <li class="nav-item"><a href="#services" class="nav-link text-white">Services</a></li>
-                        <li class="nav-item"><a href="#portfolio" class="nav-link text-white">Portfolio</a></li>
-                        <li class="nav-item"><a href="#team" class="nav-link text-white">Team</a></li>
-                        <li class="nav-item"><a href="#pricing" class="nav-link text-white">Pricing</a></li>
-                        <li class="nav-item"><a href="#contact" class="nav-link text-white">Contact</a></li>
-                        <li class="nav-item mt-3">
-                            <a class="btn btn-warning btn-md rounded-pill px-4 py-2 w-100" href="#about">Get Started</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="offcanvas-body">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a href="#hero" class="nav-link text-white">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link text-white">About</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link text-white">Services</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link text-white">Portfolio</a></li>
+                    <li class="nav-item"><a href="#team" class="nav-link text-white">Team</a></li>
+                    <li class="nav-item"><a href="#pricing" class="nav-link text-white">Pricing</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link text-white">Contact</a></li>
+                    <li class="nav-item mt-3">
+                        <a class="btn btn-warning btn-md rounded-pill px-4 py-2 w-100" href="#about">Get Started</a>
+                    </li>
+                </ul>
             </div>
-        </header>
+        </div>
+    </header>
+
+    <!-- Title -->
+    <section id="title" class="gradient-background ">
 
         <div class="container col-xxl-8 px-4 pt-5 text-light ">
             <div class="row flex-lg-row-reverse align-items-center g-5 pt-5">
@@ -257,8 +256,8 @@
                         <div
                             class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
 
-                            <img src="./Assets/Images/Favicons/E-commerce Development.png" alt="Web Development Icon" class
-                                width="50" height="50">
+                            <img src="./Assets/Images/Favicons/E-commerce Development.png" alt="Web Development Icon"
+                                class width="50" height="50">
                         </div>
                         <div>
                             <h3 class="fs-4 text-body-emphasis">E-commerce Development</h3>
@@ -384,8 +383,8 @@
                 <div class="row">
                     <div class="col-6 col-md-2 mb-3">
                         <a href="index.html" class="d-flex align-items-center text-white text-decoration-none">
-                            <img src="./Assets/Images/Logo/CodeMikey.png" alt="Custom Logo" class="logo me-2" width="150"
-                                height="50">
+                            <img src="./Assets/Images/Logo/CodeMikey.png" alt="Custom Logo" class="logo me-2"
+                                width="150" height="50">
                         </a>
                         <p>I'm Web Developer. I help businesses create stunning, high-performing websites.
                             With a focus on both design and functionality
